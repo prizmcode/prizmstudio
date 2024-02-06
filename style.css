@@ -1,0 +1,54 @@
+/*
+Theme Name: TailPress
+Theme URI: https://github.com/jeffreyvr/tailpress
+Author: Jeffrey van Rossum
+Author URI: https://vanrossum.dev
+Description: TailPress is a simple boilerplate WordPress theme with Tailwind CSS.
+Version: 1.0.0
+License: MIT
+License URI: https://github.com/jeffreyvr/tailpress/blob/master/LICENSE
+Text Domain: tailpress
+*/
+
+
+#swirl {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    fill: #a5347d;
+    animation-name: spin;
+    animation-duration: 35000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */ 
+    /* transform: rotate(.03turn);  */
+}
+
+#blueSwirl {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    animation-name: spin;
+    animation-duration: 25000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+from {
+transform:rotate(0deg);
+}
+to {
+transform:rotate(360deg);
+}
+}
+
+#tagline {
+background: #a77851;
+width: 50%;
+position: relative;
+z-index: 3;
+}
+

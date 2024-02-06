@@ -1,0 +1,311 @@
+
+.entry-content,
+.block-editor-block-list__layout {
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+ 
+  p,
+  ul,
+  ol {
+    a {
+      @apply text-blue-500 underline;
+
+      &:hover {
+        @apply no-underline;
+      }
+    }
+
+    @apply mb-8;
+  }
+
+  ul:not(.block-editor-block-variation-picker__variations) {
+    li {
+      @apply list-disc list-inside;
+    }
+  }
+
+  ol {
+    li {
+      @apply list-decimal list-inside;
+    }
+  }
+}
+.entry-content ul {
+  margin-left: 2rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Lato';
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+
+#swirl {
+  position: absolute;
+  top: 5rem;
+  z-index: 1;
+  fill: #a5347d;
+  animation-name: spin;
+  animation-duration: 45000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* transform: rotate(3deg); */
+  /* transform: rotate(0.3rad);/ */
+  /* transform: rotate(3grad); */
+  /* transform: rotate(.03turn);  */
+}
+
+#blueSwirl {
+  position: absolute;
+  top: 5rem;
+  z-index: 2;
+  animation-name: spin;
+  animation-duration: 35000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#thirdSwirl {
+  position: absolute;
+  top: 5rem;
+  z-index: 2;
+  animation-name: spin;
+  animation-duration: 25000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.entry-content a {
+  color: #0e2a3d !important;
+  text-decoration: underline;
+}
+.entry-content .woocommerce a {
+  text-transform: uppercase;
+}
+#tagline {
+  background: #a77851;
+  width: 50%;
+  position: relative;
+  z-index: 3;
+}
+.prizm-text {
+    color: #fff;
+}
+
+/* logo SVG */
+
+.logo-bg {
+  fill: #BCBEC0;
+  opacity: 0.73;
+}
+
+.logo-top {
+  fill: #fff;
+}
+
+.cls-3 {
+  fill: #a5a5a5;
+}
+
+.cls-4 {
+  fill: #ed2024;
+}
+
+.cls-5 {
+  fill: #4378bc;
+}
+
+.cls-6 {
+  fill: #fee150;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-links li {
+  list-style: none;
+  padding: .7rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: lowercase;
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+  .nav-links li {
+      opacity: 0;
+      background: #000;
+      display: block;
+  }
+  .burger {
+      display: block;
+      cursor: pointer;
+  }
+
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+
+header {
+  position: relative;
+  z-index: 500;
+}
+#page {
+  width: 100%;
+}
+footer a {
+  font-weight: bold;
+}
+footer a:hover {
+  color: #fff;
+  transition: color ease-out .4s;
+}
+.skew {
+  transform: skew(5deg);
+}
+.skew-opp {
+  transform: skew(-5deg);
+}
+
+.wp-block-image .alignLeft {
+  margin-right: 2rem !important;
+}
+
+div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+  border-radius: 25px;
+  background:rgba(251, 191, 36, 100);
+  border: none;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit]:hover, div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
+  border-radius: 25px;
+  background:rgba(251, 191, 36, 100);
+  border: none;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.entry-content p {
+  margin: 1em 0;
+}
+
+.entry-content ul a {
+  text-decoration: none;
+  color: #ea580c;
+}
+.wp-block-button a {
+  color: #fff !important;
+  text-transform: uppercase;
+}
+.wc-block-grid__product {
+  list-style: none !important;
+}
+
+.wc-block-grid__product-title {
+  color:#4378bc !important;
+  font-family: 'Lato' !important;
+  text-transform: uppercase;
+ 
+}
+.woocommerce a.remove {
+  color: inherit!important;
+}
+
+.woocommerce form .form-row input.input-text, 
+.woocommerce form .form-row textarea {
+  border: 1px solid #ccc;
+  padding: .5rem;
+}
+
+l.payment_methods li, .woocommerce-cart #payment ul.payment_methods li, .woocommerce-checkout #payment ul.payment_methods li {
+  list-style: none;
+}
+
+.woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+  list-style: none;
+}
+
+#add_payment_method table.cart img, .woocommerce-cart table.cart img, .woocommerce-checkout table.cart img {
+  width: 150px;
+}
+
+.woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
+  width: inherit;
+}
+
+.woocommerce .quantity .qty {
+  border: 1px solid #ccc;
+  padding: .25rem;
+}
+
+.tribe-events-back {
+  margin: 0;
+  text-transform: uppercase;
+}
+.tribe-events-schedule {
+  margin: 0;
+}
+.tribe-common-l-container tribe-events-l-container {
+  padding: 1rem;
+}
+
+.tribe-events .tribe-events-l-container {
+  padding: 1rem;
+}
+
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-l-container {
+  padding: 1.5rem;
+}
+
+.woocommerce button.button.alt, .checkout-button button alt wc-forward {
+  background-color:cadetblue !important;
+  color: #fff !important;
+  padding: 1em;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.wc-proceed-to-checkout a:hover, .woocommerce button.button.alt:hover, .checkout-button:hover {
+  background-color:darkcyan !important;
+  color: #fff !important;
+}
+
+.woocommerce button.button.alt, .woocommerce a.button.alt {
+  background-color:cadetblue !important;
+  color: #fff !important;
+}
+.woocommerce-info {
+  border: none !important;
+}
+
