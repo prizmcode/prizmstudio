@@ -20,7 +20,7 @@
     ?>
 
 
-        <div class="entry-header mb-4 relative z-30 flex flex-col justify-end md:bg-scroll lg:bg-fixed bg-cover bg-no-repeat bg-center" style="background-image: url(<?php echo $thumb; ?>);">
+        <div class="entry-header mb-4 relative z-30 flex flex-col justify-end md:bg-scroll lg:bg-fixed lg:bg-cover bg-no-repeat bg-center" style="background-image: url(<?php echo $thumb; ?>);">
             <div style="height: 30vh">
             </div>
             <div style="height: 50vh" class="bg-gradient-to-r from-gray-700">
