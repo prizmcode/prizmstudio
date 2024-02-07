@@ -1051,6 +1051,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-blue-500{
+  --tw-text-opacity: 1;
+  color: rgba(59, 130, 246, var(--tw-text-opacity));
+}
+
 .text-gray-800{
   --tw-text-opacity: 1;
   color: rgba(31, 41, 55, var(--tw-text-opacity));
@@ -1079,11 +1084,6 @@ video {
 .text-gray-900{
   --tw-text-opacity: 1;
   color: rgba(17, 24, 39, var(--tw-text-opacity));
-}
-
-.text-blue-500{
-  --tw-text-opacity: 1;
-  color: rgba(59, 130, 246, var(--tw-text-opacity));
 }
 
 .antialiased{
@@ -1228,10 +1228,6 @@ video {
 .entry-content ol li,.block-editor-block-list__layout ol li{
       list-style-type: decimal;
     }
-
-.entry-content ul {
-  margin-left: 2rem;
-}
 
 h1, h2, h3 {
   font-family: 'Lato';
@@ -1562,10 +1558,6 @@ l.payment_methods li, .woocommerce-cart #payment ul.payment_methods li, .woocomm
     background-attachment: fixed;
   }
 
-  .md\:bg-scroll{
-    background-attachment: scroll;
-  }
-
   .md\:p-5{
     padding: 1.25rem;
   }
@@ -1623,10 +1615,6 @@ l.payment_methods li, .woocommerce-cart #payment ul.payment_methods li, .woocomm
 
   .lg\:bg-transparent{
     background-color: transparent;
-  }
-
-  .lg\:bg-fixed{
-    background-attachment: fixed;
   }
 
   .lg\:p-10{
